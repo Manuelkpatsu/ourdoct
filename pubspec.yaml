@@ -20,9 +20,16 @@ dev_dependencies:
 flutter:
   uses-material-design: true
 
-  # assets:
-  #   - images/a_dot_burr.jpeg
-  #   - images/a_dot_ham.jpeg
+  assets:
+    - assets/images/
+    - assets/images/articles/
+    - assets/images/doctors/
+    - assets/images/facilities/
+    - assets/images/health_products/
+    - assets/images/lab_services_category/
+    - assets/images/popular_category/
+    - assets/images/special_services/
+    - assets/images/specialists/
 
   # fonts:
   #   - family: Schyler
@@ -35,6 +42,3 @@ flutter:
   #       - asset: fonts/TrajanPro.ttf
   #       - asset: fonts/TrajanPro_Bold.ttf
   #         weight: 700
-  #
-  # For details regarding fonts from package dependencies,
-  # see https://flutter.dev/custom-fonts/#from-packages
