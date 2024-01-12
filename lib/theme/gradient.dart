@@ -15,8 +15,8 @@ class CustomGradient {
   );
 
   static const LinearGradient backgroundGradient = LinearGradient(
-    begin: Alignment(-1, -1),
-    end: Alignment(1.7, 0),
+    begin: Alignment.topRight,
+    end: Alignment.bottomLeft,
     colors: [
       CustomColor.primaryColor,
       CustomColor.blueColor,
