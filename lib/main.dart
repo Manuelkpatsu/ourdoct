@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:ourdoct/theme/custom_theme.dart';
 
 import 'screen/splash/splash_screen.dart';
+import 'router.dart' as router;
 
 void main() {
   runApp(const MyApp());
@@ -16,7 +17,8 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
       theme: CustomTheme.theme,
-      home: const SplashScreen(),
+      initialRoute: SplashScreen.routeName,
+      onGenerateRoute: router.generateRoute,
     );
   }
 }
