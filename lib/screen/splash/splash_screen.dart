@@ -1,5 +1,8 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:ourdoct/screen/onboard/onboard_screen.dart';
 import 'package:ourdoct/theme/gradient.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -30,7 +33,11 @@ class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderSt
     _getTimer();
   }
 
-  _getTimer() {}
+  _getTimer() {
+    Timer(const Duration(seconds: 3), () {
+      Navigator.of(context).pushReplacementNamed(OnboardScreen.routeName);
+    });
+  }
 
   @override
   void dispose() {
