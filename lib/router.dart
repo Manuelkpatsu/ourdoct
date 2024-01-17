@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'screen/authentication/phone_number_verification/phone_number_verification_screen.dart';
 import 'screen/onboard/onboard_screen.dart';
 import 'screen/splash/splash_screen.dart';
 
@@ -9,6 +10,8 @@ Route<dynamic> generateRoute(RouteSettings settings) {
       return MaterialPageRoute(builder: (_) => const SplashScreen());
     case OnboardScreen.routeName:
       return MaterialPageRoute(builder: (_) => const OnboardScreen());
+    case PhoneNumberVerificationScreen.routeName:
+      return MaterialPageRoute(builder: (_) => const PhoneNumberVerificationScreen());
     default:
       return MaterialPageRoute(
         builder: (_) => Scaffold(

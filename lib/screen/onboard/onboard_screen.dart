@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ourdoct/model/onboard_data.dart';
+import 'package:ourdoct/screen/authentication/phone_number_verification/phone_number_verification_screen.dart';
 import 'package:ourdoct/theme/custom_color.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
@@ -93,7 +94,11 @@ class _OnboardScreenState extends State<OnboardScreen> {
                 ),
               ),
               const SizedBox(height: 30),
-              GetStartedButton(onPressed: () {}),
+              GetStartedButton(
+                onPressed: () => Navigator.of(context).pushReplacementNamed(
+                  PhoneNumberVerificationScreen.routeName,
+                ),
+              ),
               const SizedBox(height: 20),
             ],
           ),
